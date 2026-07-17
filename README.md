@@ -60,3 +60,8 @@ The `rhel-coreos` container image is around 2.5GB per version, so fetching
 a range of ~10 versions can pull down roughly 20GB of disk space and
 network payload. Plan accordingly when running the range script,
 especially on constrained bandwidth or storage.
+
+When running the range script, the very latest version of a minor may not
+yet be registered in the release image, causing that version to FAIL. This
+is expected and not a problem — it will be picked up once the release image
+is updated.
