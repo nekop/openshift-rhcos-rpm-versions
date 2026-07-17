@@ -4,7 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/lib-rhcos-rpm-versions.sh"
 
-MINORS=(22 21 20 19 18 17 16)
+MINORS=(22 21 20 19 18)
 OUTPUT_ROOT="${OUTPUT_ROOT:-outputs}"
 LATEST_ONLY="${LATEST_ONLY:-0}"
 PARALLEL_JOBS="${PARALLEL_JOBS:-4}"
